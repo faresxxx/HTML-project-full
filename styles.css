@@ -1,0 +1,192 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+    scroll-behavior: smooth;
+}
+/* Body */
+body {
+    background: linear-gradient(135deg, #111, #222);
+    color: #eee;
+}
+/* Navbar */
+.navbar {
+    background: rgba(17, 17, 17, 0.85);
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease;
+    position: relative;
+}
+/* Red underline */
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ff3b3f;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+/* Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    transition: background 0.5s ease;
+}
+.section:hover {
+    background: rgba(34, 34, 34, 0.95);
+}
+.section h1, .section h2 {
+    color: #ff3b3f;
+    margin-bottom: 15px;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+}
+.section h1::after, .section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ff3b3f;
+    margin: 8px auto 20px auto;
+}
+/*section titles */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Home Section */
+#home p {
+    color: #ddd;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    animation: slideIn 1s ease-in-out;
+}
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+/* About */
+#about audio {
+    margin-top: 20px;
+}
+/* Work */
+#work p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+#work a {
+    color: #ff3b3f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+#work a:hover {
+    color: #ff1a1d;
+}
+iframe {
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+/* Resume */
+#resume table {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(34, 34, 34, 0.85);
+    border-collapse: collapse;
+    animation: fadeIn 1.5s ease;
+}
+#resume th, #resume td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+#resume th {
+    background-color: #ff3b3f;
+    color: #111;
+    font-weight: bold;
+}
+/* Contact */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    animation: slideIn 1s ease;
+}
+form label {
+    display: block;
+    margin-top: 15px;
+    color: #ff3b3f;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #eee;
+}
+form input[type="submit"] {
+    background-color: #ff3b3f;
+    color: #111;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff1a1d;
+}
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+.section h1::before,
+.section h2::before {
+    content: '✨';
+    margin-right: 10px;
+    color: #ff3b3f;
+    animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}

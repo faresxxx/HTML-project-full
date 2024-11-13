@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #faf3e0;
+    color: #333;
+}
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff6347, #ffa500);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+/*  container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff8e1;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Menu section */
+.menu-section {
+    margin-bottom: 2.5rem;
+}
+.menu-section h2 {
+    font-size: 1.8rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #ffa500;
+    padding-bottom: 0.5rem;
+}
+/* Menu items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #ffe4b5;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+ul li:hover {
+    background-color: #ffebcd;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+ul li strong {
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+}
+ul li p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+/*placeholder images */
+ul li img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Contact link */
+.contact-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+.contact-link a {
+    color: #ff6347;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ffa500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.contact-link a:hover {
+    background-color: #ffa500;
+    color: white;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ffa500;
+    color: white;
+    font-size: 0.9rem;
+    border-top: 3px solid #ff6347;
+    margin-top: 2rem;
+}
