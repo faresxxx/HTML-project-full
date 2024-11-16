@@ -1,0 +1,156 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('pxfuel.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.card,
+.accordion-button {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.footer {
+    background-color: #212121;
+}
+
+.footer .social-icon img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #cccccc;
+}
+
+.form-control:focus {
+    border-color: #c00909;
+    box-shadow: none;
+}
+
+.hero-section h1,
+.hero-section p {
+    font-family: 'Orbitron', sans-serif;
+    /* Apply Orbitron font */
+    color: red;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #1a1a1a;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #f8f9fa;
+}
+
+.navbar .navbar-brand:hover {
+    color: #c00909;
+}
+
+.navbar-nav .nav-link {
+    color: #e0e0e0;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #c00909;
+    border-bottom: 2px solid #c00909;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #e0e0e0;
+}
+
+.accordion-button {
+    font-size: 1.2rem;
+    background-color: #343a40;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #495057;
+    color: #c00909;
+}
+
+.accordion-button i {
+    margin-right: 10px;
+    color: #c00909;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Override Bootstrap button styles */
+.btn {
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: #c00909;
+    color: #ffffff;
+    border-color: #c00909;
+}
+
+.btn-primary:hover {
+    background-color: #a00707;
+    border-color: #a00707;
+}
+
+.btn-outline-light {
+    border: 2px solid #c00909;
+    color: #c00909;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #c00909;
+    color: #ffffff;
+}
+#Cashout h2 {
+    color: #c00909; 
+}
